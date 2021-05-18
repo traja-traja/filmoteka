@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 export const MainNav = () => {
@@ -6,13 +7,13 @@ export const MainNav = () => {
     <nav className="main-nav">
       <ul>
         <li>
-          <a href="/">Domů</a>
+          <Link to="/">Domů</Link>
         </li>
         <li>
-          <a href="/movies">Filmy</a>
+          <Link to="/movies">Filmy</Link>
         </li>
         <li>
-          <a href="/add-movie">Přidat film</a>
+          <Link to="/add-movie">Přidat film</Link>
         </li>
       </ul>
     </nav>
