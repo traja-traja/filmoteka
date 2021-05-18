@@ -25,7 +25,7 @@ const App = () => (
           <Route path="/movies" exact>
             <Movies />
           </Route>
-          <Route path="/movie-detail/:film" exact>
+          <Route path="/movie-detail/:id" exact>
             <MovieDetail />
           </Route>
           <Route path="/add-movie" exact>
