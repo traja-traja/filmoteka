@@ -2,10 +2,11 @@ import React from "react";
 import { render } from "react-dom";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import { Home } from "./Home";
-import { AddMovie } from "./AddMovie";
 import { MainNav } from "./MainNav";
+import { Home } from "./Home";
 import { Movies } from "./Movies";
+import { MovieDetail } from "./MovieDetail";
+import { AddMovie } from "./AddMovie";
 
 import "./style.css";
 
@@ -23,6 +24,9 @@ const App = () => (
           </Route>
           <Route path="/movies" exact>
             <Movies />
+          </Route>
+          <Route path="/movie-detail/:film" exact>
+            <MovieDetail />
           </Route>
           <Route path="/add-movie" exact>
             <AddMovie />
