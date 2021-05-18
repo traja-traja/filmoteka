@@ -2,25 +2,12 @@ import React from "react";
 import { render } from "react-dom";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+import { Home } from "./Home";
+import { AddMovie } from "./AddMovie";
 import { MainNav } from "./MainNav";
+import { Movies } from "./Movies";
+
 import "./style.css";
-
-const Home = () => {
-  return <div>Home Page</div>;
-};
-
-const Movies = () => {
-  return (
-    <div>Sbírka filmů</div>
-  );
-};
-
-const AddMovie = () => {
-  return <div>Přidat Film</div>;
-};
-
-// http://localhost:8080/     path="/"
-// http://localhost:8080/movies     path="/movies"
 
 const App = () => (
   <Router>
