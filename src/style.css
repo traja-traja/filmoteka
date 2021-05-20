@@ -17,3 +17,14 @@ html {
 header {
   text-align: center;
 }
+
+.card {
+  box-shadow: 2px 2px 5px rgba(50, 50, 50, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 2rem;
+}
+
+a.active {
+  color: red;
+}
